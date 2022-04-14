@@ -1,0 +1,80 @@
+
+:root{
+    --bg-color:#fff;
+    --font-color:#667085;
+    --primary:#8E2424;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    background: var(--bg-color);
+    font-family: 'Inter', sans-serif;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+/*Nav bar*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.65rem 7rem;
+}
+
+nav div:nth-child(1){
+    display: flex;
+    justify-content: center;
+}
+
+nav div:nth-child(1) div{
+    display: flex;
+    margin-left: 7.4rem;
+}
+nav div:nth-child(1) div button + button{
+    margin-left: 2rem;
+}
+
+nav div:nth-child(1) div button{
+    margin-left: 2rem;
+    font-size: 1rem;
+    color: var(--font-color);
+    line-height: 24px;
+    width: fit-content;
+    height: 1rem;
+}
+
+nav div{
+    display: flex;   
+    align-items: center;
+}
+
+nav div:nth-child(2) button{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1rem;
+    line-height: 24px;
+    color: var(--font-color);
+    margin-right: 30px;
+}
+
+
+nav div:nth-child(2) button.login{
+    font-size: 1rem;
+    line-height: 24px;
+    color: var(--bg-color);
+    background: var(--primary);
+    border-radius: 8px;
+    width: 7rem;
+    height: 2.5rem;
+}
