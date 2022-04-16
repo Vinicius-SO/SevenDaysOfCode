@@ -2,6 +2,7 @@
 :root{
     --bg-color:#fff;
     --font-color:#667085;
+    --heading-color: #101828;
     --primary:#8E2424;
 }
 
@@ -77,4 +78,38 @@ nav div:nth-child(2) button.login{
     border-radius: 8px;
     width: 7rem;
     height: 2.5rem;
+}
+/* Header */
+
+header{
+    width: 100vw;
+    height: 25.5rem;
+    padding: 6rem 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h2{
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+header h1{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3.75rem;
+    margin-bottom: 2rem;
+}
+
+header p {
+    font-size: 1.25rem;
+    line-height: 400;
+    line-height: 1.875rem;
+    color: var(--font-color);
 }
